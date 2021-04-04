@@ -1,13 +1,15 @@
-var Shape = function (width, height) {
-  this.width = width;
-  this.height = height;
-};
+var Shape = function () {};
 
 Shape.prototype = {
   draw: function () {
     return 'Width is ' + this.width + ' And ' + 'Height is ' + this.height;
   },
 };
+
+function mix(target, shape) {
+  target.prototype = Object.create(shape.prototype);
+  target.prototype.constructor = target;
+}
 
 // Create a Rect Shape
 var CreateRect = function (width, height) {
@@ -16,8 +18,7 @@ var CreateRect = function (width, height) {
   this.height = height;
 };
 
-CreateRect.prototype = Object.create(Shape.prototype);
-CreateRect.prototype.constructor = CreateRect;
+mix(CreateRect, Shape);
 
 var rect1 = new CreateRect(5, 10).draw();
 console.log(rect1);
@@ -29,8 +30,7 @@ var CreatePoligon = function (width, height) {
   this.height = height;
 };
 
-CreatePoligon.prototype = Object.create(Shape.prototype);
-CreatePoligon.prototype.constructor = CreatePoligon;
+mix(CreatePoligon, Shape);
 
 var poligon1 = new CreatePoligon(50, 50).draw();
 console.log(poligon1);
