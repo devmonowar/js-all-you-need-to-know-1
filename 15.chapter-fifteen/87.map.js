@@ -1,3 +1,4 @@
+// Map
 let map = new Map([
   ['a', 10],
   ['b', 20],

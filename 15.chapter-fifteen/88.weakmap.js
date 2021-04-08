@@ -1,3 +1,4 @@
+// WeakMap
 let a = {};
 let b = {};
 
@@ -10,3 +11,5 @@ console.log(wm.has(a));
 
 a = null;
 console.log(wm.has(a));
+
+// WeakMap Methods => get,has,delete,set
