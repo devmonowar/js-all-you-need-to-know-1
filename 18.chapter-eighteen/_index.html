@@ -18,13 +18,15 @@
   <body>
     <section id="section">
       <div class="container">
-        <h1 id="title" class="title my-4">Document Object Model (DOM)</h1>
+        <h1 id="title" class="title my-5">Document Object Model (DOM)</h1>
 
-        <ul class="list-group my-5">
+        <ul class="list-group my-4">
           <li class="list-group-item"><span>One</span></li>
           <li class="list-group-item"><span>Two</span></li>
           <li class="list-group-item"><span>Three</span></li>
         </ul>
+
+        <button id="add-new-list" class="btn btn-success my-4">Add new</button>
 
         <p class="lead my-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
@@ -45,6 +47,12 @@
         </p>
 
         <button class="btn btn-primary my-4">Button</button>
+
+        <div style="height: 200px" id="box" class="my-5 w-100 bg-success p-3">
+          <p id="position" class="text-light">
+            <span id="x-position">0</span>,<span id="y-position">0</span>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -56,6 +64,6 @@
     ></script>
 
     <!-- Main JS file -->
-    <script src="7.style.js"></script>
+    <script src="8.event.js"></script>
   </body>
 </html>
