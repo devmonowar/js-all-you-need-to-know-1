@@ -53,6 +53,28 @@
             <span id="x-position">0</span>,<span id="y-position">0</span>
           </p>
         </div>
+
+        <form id="form" class="form-group my-5 border p-3">
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" class="form-control" />
+          <button type="submit " class="btn btn-success d-inline-block my-4">
+            Submit
+          </button>
+          <p id="typed-name" class="mt-4"></p>
+        </form>
+
+        <div id="skill-box" class="my-5">
+          <input id="js" type="checkbox" name="skill" value="Javascript" />
+          <label for="js">Javascript</label>
+          <br />
+          <input id="py" type="checkbox" name="skill" value="Python" />
+          <label for="py">Python</label>
+          <br />
+          <input id="c++" type="checkbox" name="skill" value="c++" />
+          <label for="c++">c++</label>
+
+          <p class="skills-output my-4">Your skill is:</p>
+        </div>
       </div>
     </section>
 
@@ -64,6 +86,6 @@
     ></script>
 
     <!-- Main JS file -->
-    <script src="8.event.js"></script>
+    <script src="10.checkbox-handling.js"></script>
   </body>
 </html>
