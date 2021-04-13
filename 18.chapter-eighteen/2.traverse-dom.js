@@ -32,5 +32,5 @@ const listItems = [...listItem];
 console.log(listItems);
 
 listItems.forEach((value, index) => {
-  value.innerHTML = `${index + 1} = ${value.innerHTML}`;
+  console.log(`${index + 1} = ${value.innerText}`);
 });
